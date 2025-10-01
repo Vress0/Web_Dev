@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>註冊頁面</title>
+</head>
+<body>
+  <h2>註冊表單</h2>
+  <form method="post" action="{{ url_for('register') }}">
+    <p>姓名：<input type="text" name="name" required></p>
+    <p>Email：<input type="email" name="email" required></p>
+    <p>單位：<input type="text" name="dept" required></p>
+    <p>連絡電話：
+       <input type="tel" name="phone" 
+              pattern="[0-9]{10}" required>
+       <small>(必須為 10 位數字)</small>
+    </p>
+    <p>建議：<br>
+       <textarea name="suggestion" rows="4" cols="40"></textarea>
+    </p>
+    <button type="submit">送出</button>
+  </form>
+</body>
+</html>

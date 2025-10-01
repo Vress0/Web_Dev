@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>練習三 - 註冊頁面</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <h1>會員註冊</h1>
+    
+    <form>
+        <!-- 姓名欄位 -->
+        <p>
+            <label for="name">姓名：</label>
+            <input type="text" id="name" name="name" required>
+        </p>
+        
+        <!-- 性別選單 -->
+        <p>
+            <label for="gender">性別：</label>
+            <select id="gender" name="gender">
+                <option>請選擇性別</option>
+                <option value="male">男</option>
+                <option value="female">女</option>
+            </select>
+        </p>
+        
+        <!-- 學號欄位 -->
+        <p>
+            <label for="studentId">學號：</label>
+            <input type="text" id="studentId" name="studentId" required>
+        </p>
+        
+        <!-- 學校欄位（預設長庚大學） -->
+        <p>
+            <label for="school">學校：</label>
+            <input type="text" id="school" name="school" value="長庚大學">
+        </p>
+        
+        <!-- 上課日期欄位（預設今天，間隔7天） -->
+        <p>
+            <label for="classDate">上課日期：</label>
+            <input type="date" id="classDate" name="classDate" step="7">
+        </p>
+        
+        <!-- 照片上傳欄位 -->
+        <p>
+            <label for="photo">照片：</label>
+            <input type="file" id="photo" name="photo" accept="image/*">
+        </p>
+        
+        <!-- 密碼欄位 -->
+        <p>
+            <label for="password">密碼：</label>
+            <input type="password" id="password" name="password" required>
+        </p>
+        
+        <!-- 送出按鈕 -->
+        <p>
+            <input type="submit" value="註冊">
+        </p>
+    </form>
+    
+    <script>
+        // 設定今天的日期作為預設值
+        const today = new Date().toISOString().split('T')[0];
+        document.getElementById('classDate').value = today;
+    </script>
+</body>
+</html>

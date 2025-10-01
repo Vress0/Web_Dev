@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>練習一</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <!-- 第一頁 -->
+    <div id="page1">
+        <h1>學生資訊</h1>
+        <p>學號：<strong>學號：B1320000</strong></p>
+        <p>姓名：<em>Ryan</em></p>
+        <p id="countdown">3秒後自動跳轉到第二頁...</p>
+    </div>
+    
+    <!-- 第二頁 -->
+    <div id="page2" style="display: none;">
+        <p>練習一完成</p>
+    </div>
+    
+    <script>
+        let seconds = 3;
+        const countdownElement = document.getElementById('countdown');
+        
+        // 倒數計時
+        const timer = setInterval(function() {
+            seconds--;
+            if (seconds > 0) {
+                countdownElement.textContent = seconds + '秒後自動跳轉到第二頁...';
+            } else {
+                countdownElement.textContent = '跳轉中...';
+            }
+        }, 1000);
+        
+        // 3秒後跳轉到第二頁
+        setTimeout(function() {
+            clearInterval(timer);
+            document.getElementById('page1').style.display = 'none';
+            document.getElementById('page2').style.display = 'block';
+        }, 3000);
+    </script>
+</body>
+</html>

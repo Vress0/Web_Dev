@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>註冊頁面</title>
+</head>
+<body>
+  <h2>註冊表單</h2>
+  <form action="result.html" method="post">
+    <p>
+      姓名：<input type="text" name="name" required>
+    </p>
+    <p>
+      性別：
+      <select name="gender" required>
+        <option value="">--請選擇--</option>
+        <option value="male">男</option>
+        <option value="female">女</option>
+      </select>
+    </p>
+    <p>
+      單位：
+      <input list="dept" name="unit" required>
+      <datalist id="dept">
+        <option value="研發部">
+        <option value="行政部">
+        <option value="管理部">
+      </datalist>
+    </p>
+    <p>
+      e-mail：<input type="email" name="email" required>
+    </p>
+    <p>
+      密碼：<input type="password" name="pwd" required>
+    </p>
+    <p>
+      聯絡電話：<input type="tel" name="phone" required>
+    </p>
+    <p>
+      <button type="submit">送出資料</button>
+    </p>
+  </form>
+</body>
+</html>
