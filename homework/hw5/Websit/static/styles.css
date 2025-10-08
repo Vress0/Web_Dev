@@ -1,0 +1,75 @@
+/* ========== 全站基本設定 ========== */
+body {
+  font-family: Arial;
+  font-size: 30px;
+  background-color: rgb(0, 255, 191); /* 淺綠藍背景 */
+}
+
+/* ========== 文字與段落樣式 ========== */
+h1 {
+  color: red; /* 主標題紅色 */
+}
+
+p {
+  color: green; /* 段落文字綠色 */
+}
+
+/* span 預設為藍色 */
+span {
+  color: blue;
+}
+
+/* 特殊 span：紅色（class="highlight"） */
+span.highlight {
+  color: red;
+}
+
+/* 練習一：h1 後第一段 <p> 中的 <span> 變紅 */
+h1 + p span {
+  color: red;
+}
+
+/* 相鄰兄弟選擇器：h1 後的第一個段落放大字體 */
+h1 + p {
+  font-size: 120%;
+}
+
+/* ========== 清單樣式 ========== */
+ul {
+  list-style-type: georgian; /* 項目符號改為喬治亞語 */
+}
+
+/* <li> 中的 <em> 元素變成紫色 */
+li em {
+  color: rebeccapurple;
+}
+
+/* class="special"：橘色粗體 */
+.special {
+  color: orange;
+  font-weight: bold;
+}
+
+/* 練習二：段落後 ul 中的 .special 變橘底黑字框 */
+p + ul .special {
+  color: orange;
+  background-color: black;
+  max-width: 250px;
+}
+
+/* ========== 容器樣式 ========== */
+.container {
+  max-width: 250px;       /* 最大寬度 */
+  background-color: purple; /* 紫色背景 */
+  margin: 0 auto;         /* 水平置中 */
+  text-align: center;     /* 文字置中 */
+  color: rgb(104, 221, 196); /* 青綠文字 */
+  padding: 10px;          /* 內距 */
+  border-radius: 8px;     /* 圓角框 */
+}
+
+/* ========== 額外效果（擴充用） ========== */
+/* 讓 <a> 連結在懸停時有明顯效果 */
+a:hover {
+  text-decoration: underline wavy green;
+}
