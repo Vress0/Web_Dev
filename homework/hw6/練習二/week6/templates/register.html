@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>註冊</title>
+</head>
+<body>
+  <h1>註冊</h1>
+  <form method="post">
+    <p>
+      姓名：<input type="text" name="name" required>
+    </p>
+    <p>
+      學號：<input type="text" name="id" required>
+    </p>
+    <p>
+      Email：<input type="email" name="email" Placeholder="請輸入正確的mail格式" required>
+    </p>
+    <p>
+   <label>系所：</label>
+      <select id="dept" name="dept" required>
+        <option value="">請選擇系所</option>
+        <option value="人工智慧學系">人工智慧學系</option>
+        <option value="資管系">資管系</option>
+        <option value="健康系">健康系</option>
+        <option value="資工系">資工系</option>
+      </select>
+    </p>
+    <p>
+      連絡電話：<input type="tel" name="phone" pattern="[0-9]{10}" Placeholder="輸入十碼的手機號碼"  required>
+    </p>
+    <p>
+      建議：<br>
+      <textarea name="suggestion" rows="4" cols="40"></textarea>
+    </p>
+    <p>
+      <button type="submit">送出</button>
+    </p>
+  </form>
+</body>
+</html>

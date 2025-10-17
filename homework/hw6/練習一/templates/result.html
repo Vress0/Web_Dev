@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>註冊成功</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container2">
+        <h1>註冊成功 🎉</h1>
+        <p>姓名：{{ name }}</p>
+        <p>學號：{{ student_id }}</p>
+        <p>電話：{{ phone }}</p>
+        <a href="{{ url_for('register') }}">返回註冊頁</a>
+    </div>
+</body>
+</html>
