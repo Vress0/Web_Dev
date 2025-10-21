@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+
+</head>
+
+    <body>
+        <form action="successful.html" method="post">
+            <!--使用者輸入-->
+            <div>
+                <p>請輸入姓名: 
+                    <input type="text" required> 
+                </p>
+
+                <p>請輸入性別: 
+                    <select required>
+                        <option>男</option>
+                        <option>女</option>
+                    </select>
+                </p>
+
+                <p>請輸入單位: 
+                    <input list="dep" required> 
+                    <datalist id="dep">
+                        <option value="研發部">
+                        <option value="行政部">
+                        <option value="管理部">
+                    </datalist>
+                </p>
+
+                <p>請輸入email: 
+                    <input type="text" required> 
+                </p>
+
+                <p>請輸入密碼: 
+                    <input type="password" required>
+                </p>
+
+
+                <p>請輸入電話: 
+                    <input type="text" required> 
+                </p>
+
+
+            </div>
+
+            <!--送出資料-->
+            <div>
+                <p>
+                    <input type="submit" value="送出資料" required>
+                </p>
+            </div>
+        </form>
+    </body>
+</html>
