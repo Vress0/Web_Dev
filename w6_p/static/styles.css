@@ -1,0 +1,10 @@
+/* 設定網頁body */
+Body {
+font-family: Arial, "Microsoft JhengHei";
+background-color: #f3f3f3;
+}
+/* 標題*/
+h1 {
+text-align: center;
+color: #333;
+}

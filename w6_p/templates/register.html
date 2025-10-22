@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+
+
+    <body>
+
+        <form action="/" method="post">
+            <!--使用者輸入-->
+            <div>
+                <p>請輸入姓名: 
+                    <input type="text" name="name" required> 
+                </p>
+
+                <p>請輸入email: 
+                    <input type="text" name="email" required> 
+                </p>
+
+                <p>請輸入單位: 
+                    <input list="dept" name="dept" required> 
+                    <datalist id="dept">
+                        <option value="研發部">
+                        <option value="行政部">
+                        <option value="管理部">
+                    </datalist>
+                </p>
+
+                <p>請輸入電話: 
+                    <input type="tel" pattern="\d{10}" maxlength="10" name="phone" required> 
+                </p>
+
+                <!-- <textarea>...</textarea> 「多行文字輸入框」的標籤 -->
+                <p>建議：<br>
+                    <textarea name="suggestion"></textarea>
+                </p>
+            </div>
+
+            <!--送出資料-->
+            <div>
+                <p>
+                    <input type="submit" value="送出資料" required>
+                </p>
+            </div>
+        </form>
+    </body>
+</html>

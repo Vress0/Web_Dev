@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>註冊頁面</title>
+</head>
+<body>
+    <div class="registration-container">
+        <h2>註冊頁面</h2>
+        <form id="registrationForm">
+            <p>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </p>
+            <p>
+            <label for="studentId">Student ID:</label>
+            <input type="text" id="studentId" name="studentId" placeholder="Enter your student ID" required>
+            </p>
+            <p>
+            <label for="examDate">Exam Date:</label>
+            <input type="date" id="examDate" name="examDate" value="2024-10-30" required>
+            </p>
+            <p>
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="">Select your gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+            </p>
+            <p>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" pattern="[A-Za-z0-9]{8}" title="Password must be 8 characters long, containing only letters and numbers" required>
+            <span class="error-message" id="passwordError"></span>
+            </p>
+            <p>
+            <input type="submit" value="Register">
+            </p>
+        </form>
+    </div>
+</body>
+</html>

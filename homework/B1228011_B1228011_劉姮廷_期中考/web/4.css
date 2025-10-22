@@ -1,0 +1,6 @@
+h1 {
+    font-size: 1.5em; /* 設定與 h2 一樣的字體大小 */
+    font-weight: bold; /* 保持字體加粗 */
+    margin: 0.83em 0;  /* 調整與 h2 相同的外邊距 */
+}
+    

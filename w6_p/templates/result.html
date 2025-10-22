@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <div>
+            姓名:{{name}}<br>
+            Email：{{email}}<br>
+            單位：{{dept}}<br>
+            連絡電話：{{phone}}<br>
+            建議：<br>
+            {{suggestion}}<br>
+            <!-- <a>為HTML 超連結（anchor tag）-->
+            <a href="{{ url_for('index') }}">返回註冊頁</a>  <!--url_for(函式名稱)-->
+        </div>
+    </body>
+</html>

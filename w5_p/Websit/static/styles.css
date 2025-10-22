@@ -1,0 +1,64 @@
+h1{
+    color:red;
+}
+
+p,ol{
+    color: green;
+}
+
+ul{
+    color: blue;
+}
+li{
+    list-style-type:georgian
+}
+
+.special{
+    color: blueviolet;
+    font-weight: bold;
+}
+
+li em{
+    color: rebeccapurple;
+}
+
+
+h1+p{
+    font-size: 200%;
+}
+
+
+span {
+  border: 1px solid black;
+  background-color: lime;
+}
+
+body{
+    font-family: Arial;
+    background-color: whitesmoke;
+}
+
+
+.container{
+    max-width: 250px;
+    margin: auto;
+    background: white;
+    border: 1px solid darkgreen;
+}
+
+
+a:link {
+  color:blue;
+}
+
+a:visited {
+  color:purple;
+}
+
+a:hover {
+  color: orange;
+}
+
+a:active {
+  color: red;
+}
