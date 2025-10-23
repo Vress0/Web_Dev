@@ -1,0 +1,29 @@
+[
+  {
+    "name": "Bob",
+    "age": "20",
+    "ID": 1,
+    "languages": [
+      "Python",
+      "HTML"
+    ]
+  },
+  {
+    "name": "Jack",
+    "age": "21",
+    "ID": 2,
+    "languages": [
+      "HTML",
+      "CSS"
+    ]
+  },
+  {
+    "name": "Vress0",
+    "age": 20,
+    "ID": 3,
+    "languages": [
+      "Python",
+      "C++"
+    ]
+  }
+]

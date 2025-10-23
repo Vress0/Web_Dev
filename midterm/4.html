@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>註冊頁面</title>
+  <!-- 連結外部 CSS -->
+  <link rel="stylesheet" href="4.css">
+</head>
+
+<body>
+  <div class="registration-container">
+    <h2>註冊頁面</h2>
+    <form id="registrationForm">
+      <p>
+        <label for="name">姓名：</label>
+        <input type="text" id="name" name="name" placeholder="請輸入姓名" required>
+      </p>
+
+      <p>
+        <label for="studentId">學號：</label>
+        <input type="text" id="studentId" name="studentId" placeholder="請輸入學號（例如 B1328023）" required>
+      </p>
+
+      <p>
+        <label for="examDate">考試日期：</label>
+        <input type="date" id="examDate" name="examDate" placeholder="請輸入今天日期" required>
+      </p>
+
+      <p>
+        <label for="pet">寵物：</label>
+        <select id="pet" name="pet" required>
+          <option value="">請選擇寵物</option>
+          <option value="cat">貓</option>
+          <option value="dog">狗</option>
+        </select>
+      </p>
+
+      <p>
+        <label for="password">密碼：</label>
+        <input type="password" id="password" name="password"
+               placeholder="請輸入8位英數混合密碼"
+               pattern="[A-Za-z0-9]{8}"
+               title="密碼需為8位英數字組成"
+               required>
+      </p>
+
+      <p>
+        <input type="submit" value="註冊">
+      </p>
+    </form>
+  </div>
+</body>
+</html>
